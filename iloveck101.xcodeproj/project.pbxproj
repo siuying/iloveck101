@@ -34,6 +34,8 @@
 		546ADC8D18689E2C000C875F /* CKThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC8B18689E2C000C875F /* CKThreadViewController.m */; };
 		546ADC9118689F14000C875F /* CKThreadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC9018689F14000C875F /* CKThreadCell.m */; };
 		546ADC9218689F14000C875F /* CKThreadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC9018689F14000C875F /* CKThreadCell.m */; };
+		546ADC951868A7B0000C875F /* CKThreadDetailPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC941868A7B0000C875F /* CKThreadDetailPhotoModel.m */; };
+		546ADC961868A7B0000C875F /* CKThreadDetailPhotoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC941868A7B0000C875F /* CKThreadDetailPhotoModel.m */; };
 		F515510285CA42E39E83A6D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EB77F821F64E14A8BC0C88 /* libPods.a */; };
 		F7AA97531DFA4048BB6295BD /* libPods-iloveck101Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF073818379404F93A8AF57 /* libPods-iloveck101Tests.a */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,8 @@
 		546ADC8B18689E2C000C875F /* CKThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKThreadViewController.m; path = Controllers/CKThreadViewController.m; sourceTree = "<group>"; };
 		546ADC8F18689F14000C875F /* CKThreadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKThreadCell.h; path = Views/CKThreadCell.h; sourceTree = "<group>"; };
 		546ADC9018689F14000C875F /* CKThreadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKThreadCell.m; path = Views/CKThreadCell.m; sourceTree = "<group>"; };
+		546ADC931868A7B0000C875F /* CKThreadDetailPhotoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKThreadDetailPhotoModel.h; path = Models/CKThreadDetailPhotoModel.h; sourceTree = "<group>"; };
+		546ADC941868A7B0000C875F /* CKThreadDetailPhotoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKThreadDetailPhotoModel.m; path = Models/CKThreadDetailPhotoModel.m; sourceTree = "<group>"; };
 		78FF8DB945404C42890B39C7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B5EB77F821F64E14A8BC0C88 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D450B71A8169463584D7930D /* Pods-iloveck101Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iloveck101Tests.xcconfig"; path = "Pods/Pods-iloveck101Tests.xcconfig"; sourceTree = "<group>"; };
@@ -200,6 +204,8 @@
 				546ADC711868853F000C875F /* CKThread.m */,
 				546ADC7718689005000C875F /* CKThreadDetail.h */,
 				546ADC7818689005000C875F /* CKThreadDetail.m */,
+				546ADC931868A7B0000C875F /* CKThreadDetailPhotoModel.h */,
+				546ADC941868A7B0000C875F /* CKThreadDetailPhotoModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -400,6 +406,7 @@
 				546ADC8C18689E2C000C875F /* CKThreadViewController.m in Sources */,
 				546ADC4818688159000C875F /* IGAppDelegate.m in Sources */,
 				546ADC4418688159000C875F /* main.m in Sources */,
+				546ADC951868A7B0000C875F /* CKThreadDetailPhotoModel.m in Sources */,
 				546ADC7918689005000C875F /* CKThreadDetail.m in Sources */,
 				546ADC8718689BD7000C875F /* CKThreadDetailScraper.m in Sources */,
 				546ADC6F186883D5000C875F /* CK101Client.m in Sources */,
@@ -416,6 +423,7 @@
 				546ADC8D18689E2C000C875F /* CKThreadViewController.m in Sources */,
 				546ADC9218689F14000C875F /* CKThreadCell.m in Sources */,
 				546ADC8318689ADB000C875F /* CKThreadScraper.m in Sources */,
+				546ADC961868A7B0000C875F /* CKThreadDetailPhotoModel.m in Sources */,
 				546ADC7A18689005000C875F /* CKThreadDetail.m in Sources */,
 				546ADC8818689BD7000C875F /* CKThreadDetailScraper.m in Sources */,
 				546ADC7D18689103000C875F /* CKThreadDetailSpec.m in Sources */,

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CKThreadViewController : UITableViewController
+@class DACircularProgressView;
 
+@interface CKThreadViewController : UITableViewController
 @end

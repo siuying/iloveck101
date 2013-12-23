@@ -11,10 +11,15 @@
 #import "UIActivityIndicatorView+AFNetworking.h"
 
 #import "CKThread.h"
+#import "CKThreadDetail.h"
 #import "CKThreadCell.h"
+
+#import "DACircularProgressView.h"
+#import "CKThreadDetailPhotoModel.h"
 
 @interface CKThreadViewController ()
 @property (nonatomic, strong) NSArray* threads;
+@property (nonatomic, strong) CKThreadDetailPhotoModel* detailPhotoModel;
 @end
 
 @implementation CKThreadViewController
@@ -71,6 +76,29 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+
+    CKThread* thread = [self.threads objectAtIndex:(NSUInteger)indexPath.row];
+    [self loadThreadDetail:thread];
+}
+
+#pragma mark - Private
+
+- (void) loadThreadDetail:(CKThread*)thread {
+    [CKThreadDetail getThreadDetailWithURL:thread.url.absoluteString
+                                     block:^(CKThreadDetail *threadDetail, NSError *error) {
+                                         if (!error) {
+                                             self.detailPhotoModel = [[CKThreadDetailPhotoModel alloc] initWithThreadDetail:threadDetail];
+                                             MWPhotoBrowser *browser = [[MWPhotoBrowser alloc] initWithDelegate:self.detailPhotoModel];
+                                             [self.navigationController pushViewController:browser animated:YES];
+                                         } else {
+                                             UIAlertView* alert = [[UIAlertView alloc] initWithTitle:@"Error loading images"
+                                                                                             message:[NSString stringWithFormat:@"%@", error.description]
+                                                                                            delegate:nil
+                                                                                   cancelButtonTitle:@"OK"
+                                                                                   otherButtonTitles:nil];
+                                             [alert show];
+                                         }
+                                     }];
 }
 
 @end
