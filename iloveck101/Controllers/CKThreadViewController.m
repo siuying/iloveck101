@@ -45,7 +45,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    self.title = @"ck101";
+    self.title = @"我愛卡提諾";
 
     UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:activityIndicatorView];
