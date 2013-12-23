@@ -16,11 +16,10 @@
     return [[self class] scraperWithBlock:^id(IGXMLNode *node) {
         NSString* title = [[[node queryWithXPath:@"//title"] firstObject] text];
         NSArray* imagesUrl = [[[[node queryWithXPath:@"//div[@id='postlist']//img"] allObjects] select:^BOOL(IGXMLNode* image) {
-            return image[@"src"] != nil;
+            return image[@"file"] != nil;
         }] map:^id(IGXMLNode* image) {
-            return image[@"src"];
+            return image[@"file"];
         }];
-
         CKThreadDetail* detail = [[CKThreadDetail alloc] init];
         detail.title = title;
         detail.imageUrls = imagesUrl;
