@@ -1,0 +1,1 @@
+../../IGScraperKit/IGScraperKit/Classes/IGScraper.h
