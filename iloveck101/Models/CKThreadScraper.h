@@ -8,8 +8,13 @@
 
 #import "IGScraper.h"
 
+/**
+ Parse a ck101 page, and return list of threads.
+ */
 @interface CKThreadScraper : IGScraper
 
 +(CKThreadScraper*) scraperWithURL:(NSURL*)url;
+
+-(NSArray*) scrape:(NSString*)html;
 
 @end

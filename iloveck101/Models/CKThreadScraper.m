@@ -30,4 +30,8 @@
     }];
 }
 
+-(NSArray*) scrape:(NSString*)html {
+    return [super scrape:html];
+}
+
 @end

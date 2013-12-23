@@ -8,8 +8,15 @@
 
 #import "IGScraper.h"
 
+@class CKThreadDetail;
+
+/**
+ Parse a ck101 thread, and return a CKThreadDetail object.
+ */
 @interface CKThreadDetailScraper : IGScraper
 
 +(CKThreadDetailScraper*) scraper;
+
+-(CKThreadDetail*) scrape:(NSString*)html;
 
 @end
