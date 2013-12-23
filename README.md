@@ -21,6 +21,8 @@ pod install
 
 ## 看起來像這樣
 
+<img src="https://github.com/siuying/iloveck101/blob/master/screen1.png" width="320" height="568"/>
+<img src="https://github.com/siuying/iloveck101/blob/master/screen2.png" width="320" height="568"/>
 
 
 ## 源起 ...
