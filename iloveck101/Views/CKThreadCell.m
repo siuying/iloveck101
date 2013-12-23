@@ -17,7 +17,7 @@
     if (self) {
         self.textLabel.textColor = [UIColor blackColor];
         self.textLabel.font = [UIFont systemFontOfSize:16.0f];
-        self.textLabel.numberOfLines = 3;
+        self.textLabel.numberOfLines = 2;
         self.selectionStyle = UITableViewCellSelectionStyleGray;
     }
     return self;

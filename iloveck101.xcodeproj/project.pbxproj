@@ -545,6 +545,7 @@
 				GCC_PREFIX_HEADER = "iloveck101/iloveck101-Prefix.pch";
 				INFOPLIST_FILE = "iloveck101/iloveck101-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -559,6 +560,7 @@
 				GCC_PREFIX_HEADER = "iloveck101/iloveck101-Prefix.pch";
 				INFOPLIST_FILE = "iloveck101/iloveck101-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
