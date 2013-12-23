@@ -48,6 +48,12 @@
 #define COCOAPODS_VERSION_MINOR_AFNetworking_UIKit 0
 #define COCOAPODS_VERSION_PATCH_AFNetworking_UIKit 3
 
+// DACircularProgress
+#define COCOAPODS_POD_AVAILABLE_DACircularProgress
+#define COCOAPODS_VERSION_MAJOR_DACircularProgress 2
+#define COCOAPODS_VERSION_MINOR_DACircularProgress 1
+#define COCOAPODS_VERSION_PATCH_DACircularProgress 0
+
 // IGHTMLQuery/JavaScript
 #define COCOAPODS_POD_AVAILABLE_IGHTMLQuery_JavaScript
 #define COCOAPODS_VERSION_MAJOR_IGHTMLQuery_JavaScript 0
@@ -78,15 +84,45 @@
 #define COCOAPODS_VERSION_MINOR_Kiwi_XCTest 2
 #define COCOAPODS_VERSION_PATCH_Kiwi_XCTest 3
 
+// MBProgressHUD
+#define COCOAPODS_POD_AVAILABLE_MBProgressHUD
+#define COCOAPODS_VERSION_MAJOR_MBProgressHUD 0
+#define COCOAPODS_VERSION_MINOR_MBProgressHUD 8
+#define COCOAPODS_VERSION_PATCH_MBProgressHUD 0
+
+// MWPhotoBrowser
+#define COCOAPODS_POD_AVAILABLE_MWPhotoBrowser
+#define COCOAPODS_VERSION_MAJOR_MWPhotoBrowser 1
+#define COCOAPODS_VERSION_MINOR_MWPhotoBrowser 2
+#define COCOAPODS_VERSION_PATCH_MWPhotoBrowser 1
+
 // ObjectiveSugar
 #define COCOAPODS_POD_AVAILABLE_ObjectiveSugar
 #define COCOAPODS_VERSION_MAJOR_ObjectiveSugar 1
 #define COCOAPODS_VERSION_MINOR_ObjectiveSugar 0
 #define COCOAPODS_VERSION_PATCH_ObjectiveSugar 0
 
+// PSTCollectionView
+#define COCOAPODS_POD_AVAILABLE_PSTCollectionView
+#define COCOAPODS_VERSION_MAJOR_PSTCollectionView 1
+#define COCOAPODS_VERSION_MINOR_PSTCollectionView 2
+#define COCOAPODS_VERSION_PATCH_PSTCollectionView 0
+
 // RegExCategories
 #define COCOAPODS_POD_AVAILABLE_RegExCategories
 #define COCOAPODS_VERSION_MAJOR_RegExCategories 1
 #define COCOAPODS_VERSION_MINOR_RegExCategories 0
 #define COCOAPODS_VERSION_PATCH_RegExCategories 0
+
+// SDWebImage
+#define COCOAPODS_POD_AVAILABLE_SDWebImage
+#define COCOAPODS_VERSION_MAJOR_SDWebImage 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage 5
+#define COCOAPODS_VERSION_PATCH_SDWebImage 1
+
+// SDWebImage/Core
+#define COCOAPODS_POD_AVAILABLE_SDWebImage_Core
+#define COCOAPODS_VERSION_MAJOR_SDWebImage_Core 3
+#define COCOAPODS_VERSION_MINOR_SDWebImage_Core 5
+#define COCOAPODS_VERSION_PATCH_SDWebImage_Core 1
 

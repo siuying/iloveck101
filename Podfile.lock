@@ -17,6 +17,7 @@ PODS:
   - AFNetworking/Serialization (2.0.3)
   - AFNetworking/UIKit (2.0.3):
     - AFNetworking/NSURLConnection
+  - DACircularProgress (2.1.0)
   - IGHTMLQuery/JavaScript (0.6.0)
   - IGScraperKit/JavaScript (0.1.0):
     - IGHTMLQuery/JavaScript
@@ -25,13 +26,24 @@ PODS:
   - Kiwi/XCTest (2.2.3):
     - Kiwi/ARC
     - Kiwi/NonARC
+  - MBProgressHUD (0.8)
+  - MWPhotoBrowser (1.2.1):
+    - DACircularProgress
+    - MBProgressHUD
+    - PSTCollectionView (~> 1.2)
+    - SDWebImage (~> 3.5)
   - ObjectiveSugar (1.0.0)
+  - PSTCollectionView (1.2.0)
   - RegExCategories (1.0)
+  - SDWebImage (3.5.1):
+    - SDWebImage/Core
+  - SDWebImage/Core (3.5.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0.0)
   - IGScraperKit/JavaScript (from `https://raw.github.com/siuying/IGScraperKit/master/IGScraperKit.podspec`)
   - Kiwi/XCTest (= 2.2.3)
+  - MWPhotoBrowser
   - ObjectiveSugar
   - RegExCategories
 
@@ -41,10 +53,15 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
+  DACircularProgress: 8c8f20c8dffdd647fbf570ddecbc2b1b59da5888
   IGHTMLQuery: dff07a2875aaf1090ab5b0e270a508981e32a916
   IGScraperKit: e43bf9469603004c940af2de4428d17754d4ede0
   Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+  MBProgressHUD: 2bbc6f470111daf7f3eaa4eb12b8cbf01c4c0622
+  MWPhotoBrowser: cd204e6b02686f6fae5034932ad8382f9963f2fc
   ObjectiveSugar: e094b5e368743fb63d74150f80f281aadff8ed2d
+  PSTCollectionView: fb2ad2790c6efa306b2caf10315b2c1464d1f5c6
   RegExCategories: 4251b5b17ed9d0e16229652ff8539c131365e218
+  SDWebImage: a408b548a634b792372e07e753fc1079aff5032a
 
 COCOAPODS: 0.28.0
