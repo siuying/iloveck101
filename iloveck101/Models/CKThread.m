@@ -38,8 +38,19 @@
                                        NSString* html = [NSString stringWithUTF8String:[data bytes]];
                                        CKThreadScraper* scraper = [CKThreadScraper scraperWithURL:task.originalRequest.URL];
                                        NSArray* threadLinks = [scraper scrape:html];
-                                       if (block) {
-                                           block(threadLinks, nil);
+                                       if (threadLinks) {
+                                           if (block) {
+                                               block(threadLinks, nil);
+                                           }
+                                       } else {
+                                           if (block) {
+                                               if (scraper.error) {
+                                                   block(nil, scraper.error);
+                                               } else {
+                                                   block(nil, [NSError errorWithDomain:@"CKThread"
+                                                                                  code:1 userInfo:@{@"message": @"unknown parse error"}]);
+                                               }
+                                           }
                                        }
                                    }
                                    failure:^(NSURLSessionDataTask *task, NSError *error) {

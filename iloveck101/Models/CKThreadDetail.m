@@ -26,6 +26,13 @@
                                            if (block) {
                                                block(detail, nil);
                                            }
+                                       } else {
+                                           if (scraper.error) {
+                                               block(nil, scraper.error);
+                                           } else {
+                                               block(nil, [NSError errorWithDomain:@"CKThreadDetail"
+                                                                              code:1 userInfo:@{@"message": @"unknown parse error"}]);
+                                           }
                                        }
                                    }
                                    failure:^(NSURLSessionDataTask *task, NSError *error) {
