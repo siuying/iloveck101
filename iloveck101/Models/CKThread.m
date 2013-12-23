@@ -8,7 +8,7 @@
 
 #import "CKThread.h"
 #import "CK101Client.h"
-#import "IGScraper.h"
+#import "CKThreadScraper.h"
 #import "IGHTMLQuery.h"
 
 @implementation CKThread
@@ -36,22 +36,7 @@
                                    success:^(NSURLSessionDataTask *task, id responseObject) {
                                        NSData* data = responseObject;
                                        NSString* html = [NSString stringWithUTF8String:[data bytes]];
-                                       IGScraper* scraper = [IGScraper scraperWithBlock:^id(IGXMLNode *node) {
-                                           NSArray* links = [[node queryWithXPath:@"//a"] allObjects];
-                                           NSArray* threads = [[links select:^BOOL(IGXMLNode* link) {
-                                               NSString* href = link[@"href"];
-                                               NSString* title = link[@"title"];
-                                               return href && title && title.length > 0 && [href isMatch:RX(@"thread-(\\d+)")];
-                                           }] map:^id(IGXMLNode* link) {
-                                               CKThread* thread = [[CKThread alloc] init];
-                                               thread.url = [NSURL URLWithString:link[@"href"] relativeToURL:task.originalRequest.URL];
-                                               thread.title = link[@"title"];
-                                               return thread;
-                                           }];
-                                           NSArray* uniqueThreads = [[NSOrderedSet orderedSetWithArray:threads] array];
-                                           return uniqueThreads;
-                                       }];
-
+                                       CKThreadScraper* scraper = [CKThreadScraper scraperWithURL:task.originalRequest.URL];
                                        NSArray* threadLinks = [scraper scrape:html];
                                        if (block) {
                                            block(threadLinks, nil);

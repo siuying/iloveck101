@@ -8,8 +8,7 @@
 
 #import "CKThreadDetail.h"
 #import "CK101Client.h"
-#import "IGScraper.h"
-#import "IGHTMLQuery.h"
+#import "CKThreadDetailScraper.h"
 
 @implementation CKThreadDetail
 
@@ -20,19 +19,7 @@
                                    success:^(NSURLSessionDataTask *task, id responseObject) {
                                        NSData* data = responseObject;
                                        NSString* html = [NSString stringWithUTF8String:[data bytes]];
-                                       IGScraper* scraper = [IGScraper scraperWithBlock:^id(IGXMLNode *node) {
-                                           NSString* title = [[[node queryWithXPath:@"//title"] firstObject] text];
-                                           NSArray* imagesUrl = [[[[node queryWithXPath:@"//div[@id='postlist']//img"] allObjects] select:^BOOL(IGXMLNode* image) {
-                                               return image[@"src"] != nil;
-                                           }] map:^id(IGXMLNode* image) {
-                                               return image[@"src"];
-                                           }];
-                                           CKThreadDetail* detail = [[CKThreadDetail alloc] init];
-                                           detail.title = title;
-                                           detail.imageUrls = imagesUrl;
-                                           return detail;
-                                       }];
-                                       
+                                       CKThreadDetailScraper* scraper = [CKThreadDetailScraper scraper];                                       
                                        CKThreadDetail* detail = [scraper scrape:html];
                                        if (detail) {
                                            detail.url = task.originalRequest.URL;
