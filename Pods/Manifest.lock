@@ -31,7 +31,7 @@ PODS:
 DEPENDENCIES:
   - AFNetworking (~> 2.0.0)
   - IGScraperKit/JavaScript (from `https://raw.github.com/siuying/IGScraperKit/master/IGScraperKit.podspec`)
-  - Kiwi/XCTest
+  - Kiwi/XCTest (= 2.2.3)
   - ObjectiveSugar
   - RegExCategories
 

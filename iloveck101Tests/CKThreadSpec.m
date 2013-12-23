@@ -6,7 +6,7 @@
 //  Copyright 2013年 Ignition Soft. All rights reserved.
 //
 
-#import <Kiwi/Kiwi.h>
+#import "Kiwi.h"
 #import "CKThread.h"
 
 SPEC_BEGIN(CKThreadSpec)

@@ -6,5 +6,5 @@ pod "ObjectiveSugar"
 pod "RegExCategories"
 
 target :iloveck101Tests do
-  pod 'Kiwi/XCTest'
+  pod 'Kiwi/XCTest', '2.2.3'
 end
