@@ -60,3 +60,15 @@
 #define COCOAPODS_VERSION_MINOR_IGScraperKit_JavaScript 1
 #define COCOAPODS_VERSION_PATCH_IGScraperKit_JavaScript 0
 
+// ObjectiveSugar
+#define COCOAPODS_POD_AVAILABLE_ObjectiveSugar
+#define COCOAPODS_VERSION_MAJOR_ObjectiveSugar 1
+#define COCOAPODS_VERSION_MINOR_ObjectiveSugar 0
+#define COCOAPODS_VERSION_PATCH_ObjectiveSugar 0
+
+// RegExCategories
+#define COCOAPODS_POD_AVAILABLE_RegExCategories
+#define COCOAPODS_VERSION_MAJOR_RegExCategories 1
+#define COCOAPODS_VERSION_MINOR_RegExCategories 0
+#define COCOAPODS_VERSION_PATCH_RegExCategories 0
+

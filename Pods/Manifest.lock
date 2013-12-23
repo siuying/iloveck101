@@ -20,10 +20,20 @@ PODS:
   - IGHTMLQuery/JavaScript (0.6.0)
   - IGScraperKit/JavaScript (0.1.0):
     - IGHTMLQuery/JavaScript
+  - Kiwi/ARC (2.2.3)
+  - Kiwi/NonARC (2.2.3)
+  - Kiwi/XCTest (2.2.3):
+    - Kiwi/ARC
+    - Kiwi/NonARC
+  - ObjectiveSugar (1.0.0)
+  - RegExCategories (1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0.0)
   - IGScraperKit/JavaScript (from `https://raw.github.com/siuying/IGScraperKit/master/IGScraperKit.podspec`)
+  - Kiwi/XCTest
+  - ObjectiveSugar
+  - RegExCategories
 
 EXTERNAL SOURCES:
   IGScraperKit:
@@ -32,6 +42,9 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   AFNetworking: e499052cbf3d743e9bb727bb37adb9dc2547ba15
   IGHTMLQuery: dff07a2875aaf1090ab5b0e270a508981e32a916
-  IGScraperKit: 9e47f5338459c89ac801c624ebfadf71a0152b52
+  IGScraperKit: e43bf9469603004c940af2de4428d17754d4ede0
+  Kiwi: 04c51e880831d291748ec702d42c4101f7eb95c9
+  ObjectiveSugar: e094b5e368743fb63d74150f80f281aadff8ed2d
+  RegExCategories: 4251b5b17ed9d0e16229652ff8539c131365e218
 
 COCOAPODS: 0.28.0

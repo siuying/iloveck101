@@ -20,8 +20,13 @@
 		546ADC581868815A000C875F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546ADC3718688159000C875F /* Foundation.framework */; };
 		546ADC591868815A000C875F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 546ADC3B18688159000C875F /* UIKit.framework */; };
 		546ADC611868815A000C875F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546ADC5F1868815A000C875F /* InfoPlist.strings */; };
-		546ADC631868815A000C875F /* iloveck101Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC621868815A000C875F /* iloveck101Tests.m */; };
+		546ADC6F186883D5000C875F /* CK101Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC6E186883D5000C875F /* CK101Client.m */; };
+		546ADC721868853F000C875F /* CKThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC711868853F000C875F /* CKThread.m */; };
+		546ADC7418688699000C875F /* CKThreadSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC7318688699000C875F /* CKThreadSpec.m */; };
+		546ADC75186887C1000C875F /* CK101Client.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC6E186883D5000C875F /* CK101Client.m */; };
+		546ADC76186887C1000C875F /* CKThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 546ADC711868853F000C875F /* CKThread.m */; };
 		F515510285CA42E39E83A6D3 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5EB77F821F64E14A8BC0C88 /* libPods.a */; };
+		F7AA97531DFA4048BB6295BD /* libPods-iloveck101Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AF073818379404F93A8AF57 /* libPods-iloveck101Tests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1AF073818379404F93A8AF57 /* libPods-iloveck101Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iloveck101Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		546ADC3418688159000C875F /* iloveck101.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iloveck101.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		546ADC3718688159000C875F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		546ADC3918688159000C875F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,9 +59,14 @@
 		546ADC561868815A000C875F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		546ADC5E1868815A000C875F /* iloveck101Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iloveck101Tests-Info.plist"; sourceTree = "<group>"; };
 		546ADC601868815A000C875F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		546ADC621868815A000C875F /* iloveck101Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iloveck101Tests.m; sourceTree = "<group>"; };
+		546ADC6D186883D5000C875F /* CK101Client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CK101Client.h; path = Models/CK101Client.h; sourceTree = "<group>"; };
+		546ADC6E186883D5000C875F /* CK101Client.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CK101Client.m; path = Models/CK101Client.m; sourceTree = "<group>"; };
+		546ADC701868853F000C875F /* CKThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CKThread.h; path = Models/CKThread.h; sourceTree = "<group>"; };
+		546ADC711868853F000C875F /* CKThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CKThread.m; path = Models/CKThread.m; sourceTree = "<group>"; };
+		546ADC7318688699000C875F /* CKThreadSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKThreadSpec.m; sourceTree = "<group>"; };
 		78FF8DB945404C42890B39C7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		B5EB77F821F64E14A8BC0C88 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D450B71A8169463584D7930D /* Pods-iloveck101Tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iloveck101Tests.xcconfig"; path = "Pods/Pods-iloveck101Tests.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +88,7 @@
 				546ADC571868815A000C875F /* XCTest.framework in Frameworks */,
 				546ADC591868815A000C875F /* UIKit.framework in Frameworks */,
 				546ADC581868815A000C875F /* Foundation.framework in Frameworks */,
+				F7AA97531DFA4048BB6295BD /* libPods-iloveck101Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +103,7 @@
 				546ADC3618688159000C875F /* Frameworks */,
 				546ADC3518688159000C875F /* Products */,
 				78FF8DB945404C42890B39C7 /* Pods.xcconfig */,
+				D450B71A8169463584D7930D /* Pods-iloveck101Tests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +124,7 @@
 				546ADC3B18688159000C875F /* UIKit.framework */,
 				546ADC561868815A000C875F /* XCTest.framework */,
 				B5EB77F821F64E14A8BC0C88 /* libPods.a */,
+				1AF073818379404F93A8AF57 /* libPods-iloveck101Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,8 +158,8 @@
 		546ADC5C1868815A000C875F /* iloveck101Tests */ = {
 			isa = PBXGroup;
 			children = (
-				546ADC621868815A000C875F /* iloveck101Tests.m */,
 				546ADC5D1868815A000C875F /* Supporting Files */,
+				546ADC7318688699000C875F /* CKThreadSpec.m */,
 			);
 			path = iloveck101Tests;
 			sourceTree = "<group>";
@@ -162,6 +176,10 @@
 		546ADC6C1868830B000C875F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				546ADC6D186883D5000C875F /* CK101Client.h */,
+				546ADC6E186883D5000C875F /* CK101Client.m */,
+				546ADC701868853F000C875F /* CKThread.h */,
+				546ADC711868853F000C875F /* CKThread.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -192,9 +210,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 546ADC691868815A000C875F /* Build configuration list for PBXNativeTarget "iloveck101Tests" */;
 			buildPhases = (
+				FDB494A3F6DC47A5A0149877 /* Check Pods Manifest.lock */,
 				546ADC511868815A000C875F /* Sources */,
 				546ADC521868815A000C875F /* Frameworks */,
 				546ADC531868815A000C875F /* Resources */,
+				01D8693870BB41B9B80E5EB2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -262,6 +282,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		01D8693870BB41B9B80E5EB2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-iloveck101Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A06F4F840E9C4882A6C1D771 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -292,6 +327,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FDB494A3F6DC47A5A0149877 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -302,6 +352,8 @@
 				546ADC4818688159000C875F /* IGAppDelegate.m in Sources */,
 				546ADC4418688159000C875F /* main.m in Sources */,
 				546ADC4E1868815A000C875F /* IGViewController.m in Sources */,
+				546ADC6F186883D5000C875F /* CK101Client.m in Sources */,
+				546ADC721868853F000C875F /* CKThread.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,7 +361,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				546ADC631868815A000C875F /* iloveck101Tests.m in Sources */,
+				546ADC7418688699000C875F /* CKThreadSpec.m in Sources */,
+				546ADC76186887C1000C875F /* CKThread.m in Sources */,
+				546ADC75186887C1000C875F /* CK101Client.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,9 +507,9 @@
 		};
 		546ADC6A1868815A000C875F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D450B71A8169463584D7930D /* Pods-iloveck101Tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iloveck101.app/iloveck101";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -469,16 +523,15 @@
 				);
 				INFOPLIST_FILE = "iloveck101Tests/iloveck101Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
 		};
 		546ADC6B1868815A000C875F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D450B71A8169463584D7930D /* Pods-iloveck101Tests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iloveck101.app/iloveck101";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -488,7 +541,6 @@
 				GCC_PREFIX_HEADER = "iloveck101/iloveck101-Prefix.pch";
 				INFOPLIST_FILE = "iloveck101Tests/iloveck101Tests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;

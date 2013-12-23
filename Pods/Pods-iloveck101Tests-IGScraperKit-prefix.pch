@@ -1,0 +1,6 @@
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#import "Pods-iloveck101Tests-environment.h"
+#define IGSCRAPER_JAVASCRIPT_ADDITIONS
