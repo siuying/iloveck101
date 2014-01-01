@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>64CAA24A-6AD6-460C-8A32-2BA2B180DB3E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>iloveck101</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>69965F4C-B544-4659-9A8C-3659BC405A60</key>
+		<string>ssh://github.com/siuying/iloveck101.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>iloveck101.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>69965F4C-B544-4659-9A8C-3659BC405A60</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/siuying/iloveck101.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>69965F4C-B544-4659-9A8C-3659BC405A60</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>69965F4C-B544-4659-9A8C-3659BC405A60</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iloveck101</string>
+		</dict>
+	</array>
+</dict>
+</plist>

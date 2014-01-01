@@ -58,7 +58,7 @@
 #define COCOAPODS_POD_AVAILABLE_IGHTMLQuery_JavaScript
 #define COCOAPODS_VERSION_MAJOR_IGHTMLQuery_JavaScript 0
 #define COCOAPODS_VERSION_MINOR_IGHTMLQuery_JavaScript 6
-#define COCOAPODS_VERSION_PATCH_IGHTMLQuery_JavaScript 0
+#define COCOAPODS_VERSION_PATCH_IGHTMLQuery_JavaScript 2
 
 // IGScraperKit/JavaScript
 #define COCOAPODS_POD_AVAILABLE_IGScraperKit_JavaScript
